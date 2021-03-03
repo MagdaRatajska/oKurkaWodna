@@ -1,23 +1,67 @@
+$contact-font: 'Assistant', sans-serif;
+$logo-font: 'Shadows Into Light', cursive;
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
+
 header {
-  color: #2cfad3;
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
   background-image: linear-gradient(to bottom right, #07679f, #2deefd);
   align-items: center;
-  a{
-    color: black;
+
+  .logo {
+    color: #2cfad3;
+    font-family: $logo-font;
+    font-size: 4rem;
     text-decoration: none;
-    padding: 2rem;
+  }
+
+  .header__contact {
+    text-decoration: none;
+    padding: 1rem;
+    font-family: $logo-font;
+    color: black;
+    margin-left: 1rem;
+  }
+
+  .fab {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  .fa-twitter-square {
+    color: deepskyblue;
+  }
+
+  .fa-facebook-square {
+    color: blue;
   }
 }
 
-.sliderimg{
-  width: 100%;
-  height: 500px;
-  object-fit: cover
+main {
+  .main__description{
+    font-family: $contact-font;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #ffffff;
+  }
+  .slider {
+    background-color: #ffffff;
+
+    .sliderimg {
+      width: 100%;
+      height: 30rem;
+      object-fit: cover;
+      color: black;
+    }
+  }
 }
+
+
