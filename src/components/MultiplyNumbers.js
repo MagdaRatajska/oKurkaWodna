@@ -1,42 +1,47 @@
 import React, {Component} from "react";
 import CheckOptions from "./CheckOptions";
-import image4 from "../images/image4.jpg";
+import image5 from "../images/image5.jpg";
 
 class MultiplyNumbers extends Component {
     state = {
         roofDimensionA: 0,
         roofDimensionB: 0,
         typeOfRoof: 0,
-        region: 0
+        region: 0,
+        score: 0
     }
 
     nanChecker = () => {
         if (!isNaN(this.state.roofDimensionA) && !isNaN(this.state.roofDimensionB) && !isNaN(this.state.typeOfRoof) && !isNaN(this.state.region)) {
-            return +(this.state.roofDimensionA) * +(this.state.roofDimensionB) * +(this.state.typeOfRoof) * +(this.state.region);
-        } else {
-            return "Wprowadź wymiary dachu. Wybierz wojewódźtwo i rodzaj dachu";
+            this.setState({
+                score: parseInt(this.state.roofDimensionA) * parseInt(this.state.roofDimensionB) * parseFloat(this.state.typeOfRoof) * parseInt(this.state.region)
+            })
+        }
+            else {
+            this.setState({score:"Wprowadź wymiary dachu. Wybierz wojewódźtwo i rodzaj dachu"});
         }
     }
 
     inputHandler = (e) => {
         this.setState({
-            [e.target.name]: parseInt(e.target.value)
-        })
+            [e.target.name]: (e.target.value)
+        }, this.nanChecker)
+
     }
 
     handleChange(event) {
-        this.setState({value: event.target.value});
+        this.setState({value: event.target.value}, this.nanChecker);
     }
 
 
     render() {
         return (
             <>
-                <div>
+                <div className="multiply-numbers__main">
                 <form className="multiply-numbers__form">
                     <h3 className="multiply__description" id="calculator">Kalkulator ilości wody, która spływa z Twojego dachu w ciągu roku: </h3>
                     <label>
-                        Wprowadź pierwszy wymiar dachu w metrach:
+                        Wprowadź pierwszy wymiar dachu w metrach A:
                     </label>
                     <input
                         type="number"
@@ -46,7 +51,7 @@ class MultiplyNumbers extends Component {
                     />
                     <br/>
                     <label>
-                        Wprowadź drugi wymiar dachu w metrach:
+                        Wprowadź drugi wymiar dachu w metrach B:
                     </label>
                     <input
                         type="number"
@@ -59,10 +64,10 @@ class MultiplyNumbers extends Component {
                         Wybierz rodzaj dachu, dla którego obliczasz:
                     </label>
                         <select name="typeOfRoof" value={this.state.typeOfRoof} onChange={e => this.inputHandler(e)}>
-                            <option value="1">papa bitumiczna</option>
-                            <option value="2">skosny z dachówską</option>
-                            <option value="3">skosny z blachą</option>
-                            <option value="1">dach płaski</option>
+                            <option value="0.2">papa bitumiczna</option>
+                            <option value="0.2">skosny z dachówską</option>
+                            <option value="0.3">skosny z blachą</option>
+                            <option value="0.1">dach płaski</option>
                         </select>
                     <br/>
                     <label>
@@ -87,19 +92,16 @@ class MultiplyNumbers extends Component {
                             <option value="700">małopolskie</option>
                         </select>
                     <div className="water-summary">
-                        <h1 className="water-amount">Ilość wody, którą można złapać rocznie:</h1> <h1 className="water-amount__yellow">{this.nanChecker()} </h1> <h1 className="water-amount"> litrów </h1>
-                    <CheckOptions/>
+                        <h1 className="water-amount">Ilość wody rocznie:</h1> <h1 className="water-amount__yellow">{this.state.score.toFixed(0)} </h1> <h1 className="water-amount"> litrów </h1>
                     </div>
                 </form>
-                </div>
-                <div>
                     <img src={image5} className="image5" alt="picture"/>
                 </div>
+                <CheckOptions score={this.state.score} scoreSetter = {()=>this.nanChecker()}/>
             </>
         );
     }
-
-}
+};
 
 export default MultiplyNumbers;
 

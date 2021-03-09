@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90fe6f33-f9bf-4557-b06f-5814ef74cccf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddressInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CheckOptions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MultiplyNumbers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WaterUsageInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CheckOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CheckOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MultiplyNumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MultiplyNumbers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WaterUsageInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WaterUsageInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/image5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/image5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/z2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/z2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/z3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/z3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +71,9 @@
       <workItem from="1614934231622" duration="2595000" />
       <workItem from="1614969790440" duration="461000" />
       <workItem from="1614978094217" duration="3739000" />
-      <workItem from="1615202448812" duration="6545000" />
+      <workItem from="1615202448812" duration="9885000" />
+      <workItem from="1615285508214" duration="9648000" />
+      <workItem from="1615315906727" duration="2358000" />
     </task>
     <servers />
   </component>

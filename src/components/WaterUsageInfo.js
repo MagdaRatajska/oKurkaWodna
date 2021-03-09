@@ -14,11 +14,11 @@ const WaterUsageInfo = () => {
         return (
             <div className="water-usage__images">
                 <img src={i1} className="image__left" id="i1" alt="image" onClick={e => clickHandler(e)}/>
-                <p>500m<sup>3</sup></p>
+                <p>5000m<sup>3</sup></p>
                 <img src={i2} className="image" id="i2" alt="image" onClick={e => clickHandler(e)}/><p>1200m<sup>3</sup>
             </p>
                 <img src={i3} className="image__left" id="i3" alt="image" onClick={e => clickHandler(e)}/>
-                <p>300m<sup>3</sup></p>
+                <p>3900m<sup>3</sup></p>
                 <img src={i4} className="image" id="i4" alt="image" onClick={e => clickHandler(e)}/><p>8600m<sup>3</sup>
             </p>
             </div>
